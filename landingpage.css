@@ -1,0 +1,29 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 40px;
+    padding: 20px;
+    line-height: 1.6;
+}
+
+h1, h2 {
+    color: #2b7a2b;
+}
+
+footer {
+    text-align: center;
+    margin-top: 20px;
+}
+.back-home {
+    display: inline-block;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    font-size: 16px;
+    color: purple;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.back-home:hover {
+    text-decoration: underline;
+}

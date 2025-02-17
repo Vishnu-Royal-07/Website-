@@ -1,0 +1,334 @@
+/* Reset some default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #f9f9f9;
+    color: #333;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+    background-color: #f7fcf8;
+    color: rgb(7, 217, 24);
+}
+
+.logo-container img {
+    height: 80px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+/*Below color was Home and ect..*/
+nav ul li a {
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.hero-section {
+    position: relative;
+    width: 100%;
+    height: 130vh; /* Adjust height as needed */
+    overflow: hidden;
+    
+}
+
+.hero-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.hero-overlay {
+    position: absolute;
+    bottom: 40px; /* Adjust distance from the bottom */
+    right: 20px; /* Adjust distance from the right */
+    text-align: right; /* Align text to the right */
+    color: white;
+    font-family: Arial, sans-serif;
+    transform: translateY(-2in); /* Moves text up by 2 inches */
+}
+
+.hero-overlay h2 {
+    
+    font-size: 4rem; /* Adjust font size as needed */
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    margin: 0; /* Remove default margin */
+    font-family: 'Sans-serif';
+}
+
+.hero-overlay p {
+    font-size: 1.5rem; /* Adjust font size as needed */
+    font-weight: bold;
+    letter-spacing: 1px;
+    margin: 0; /* Remove default margin */
+}
+
+/* Categories Heading */
+.categories-title {
+    text-align: center;
+    font-size: 32px;
+    font-weight: bold;
+    color: #2E7D32; /* Green color */
+    margin-bottom: 20px;
+}
+
+/* 🔹 Ensure Categories are in a Single Horizontal Row */
+.category-container {
+    display: flex;
+    flex-direction: row;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); /* Responsive grid */
+    justify-content: center;
+    align-items: stretch;
+    flex-wrap: nowrap;
+    gap: 40px;
+    overflow-x: auto;
+    white-space: wrap;
+    padding: 10px;
+}
+
+/* 🔹 Category Box Styling */
+.category {
+    width: 275px; /* Fixed width */
+    background: white;
+    padding: 20px;
+    border-radius: 15px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    flex-shrink: 0;
+    height: 500px; /* 🟢 FIXED HEIGHT to prevent text overflow */
+    display: inline-block;
+    flex-direction: column;
+    justify-content: space-between; /* Ensures content is well spaced */
+}
+
+/* 🔹 Category Image */
+.category img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+/* 🔹 Category Title */
+.category h3 {
+    margin: 10px 0;
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+/* 🔹 Category Description */
+.category p {
+    font-size: 0.95em;
+    color: #555;
+    flex-grow: 1; /* Allows text to take available space */
+    overflow: hidden; /* Prevents text overflow */
+    text-overflow: ellipsis; /* Adds "..." if text is too long */
+}
+
+/* 🔹 Shop Now Button */
+.shop-now {
+    display: inline-block;
+    padding: 10px 15px;
+    background-color: #4CAF50;
+    color: white;
+    text-decoration: none;
+    text-align: center;
+    border-radius: 5px;
+    font-size: 1em;
+    margin-top: 10px;
+}
+
+.shop-now:hover {
+    background-color: #45a049;
+}
+
+
+.shop-now {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 1.2em;
+}
+
+.shop-now:hover {
+    background-color: #45a049;
+}
+
+.shop-now {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 1.2em;
+}
+
+.shop-now:hover {
+    background-color: #45a049;
+}
+
+.about-section {
+    max-width: 1000px; /* Increased width for better layout */
+    margin: 40px auto; /* Center align */
+    padding: 20px;
+    font-family: 'Arial', sans-serif;
+    color: #333; /* Dark gray text */
+    line-height: 1.6; /* Improve readability */
+}
+
+.about-container {
+    display: flex; /* Make the container a flexbox */
+    align-items: center; /* Vertically align text and image */
+    justify-content: space-between; /* Space between text and image */
+    gap: 20px; /* Spacing between text and image */
+}
+
+.about-text {
+    flex: 1; /* Allow text to take up available space */
+}
+
+.about-image {
+    flex: 1; /* Allow image to take up available space */
+    text-align: right; /* Align image to the right */
+}
+
+.about-image img {
+    max-width: 100%; /* Make the image responsive */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 10px; /* Optional: Add rounded corners */
+}
+
+.about-section h2 {
+    color: #1b7e2e; /* Green color for heading */
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.about-section p {
+    font-size: 1.1rem;
+    font-weight: normal;
+}
+
+.about-section strong {
+    font-weight: bold;
+}
+
+.talk-to-us {
+    max-width: 900px;
+    margin: 50px auto;
+    padding: 20px;
+    text-align: center;
+    font-family: 'Arial', sans-serif;
+}
+
+.talk-to-us h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+    color: #1b7e2e; /* Green color */
+    font-weight: bold;
+}
+
+.talk-to-us p {
+    font-size: 1.1rem;
+    color: #555;
+    margin-bottom: 30px;
+}
+
+.contact-info {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.contact-item {
+    flex: 1;
+    text-align: center;
+    padding: 20px;
+    max-width: 250px;
+}
+
+.contact-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 60px;
+    height: 60px;
+    margin: 0 auto 10px;
+    border: 2px solid #1b7e2e;
+    border-radius: 50%;
+}
+
+.contact-icon img {
+    width: 30px;
+    height: 30px;
+}
+
+.contact-item strong {
+    display: block;
+    font-size: 1.2rem;
+    margin-top: 10px;
+    color: #333;
+}
+
+.contact-item p {
+    font-size: 1rem;
+    color: #1b7e2e;
+    font-weight: bold;
+}
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+    background-color: #fff;
+    color: #333;
+    font-size: 14px;
+    border-top: 1px solid #ddd;
+}
+
+footer p {
+    margin: 0;
+}
+
+footer a {
+    color: #333;
+    text-decoration: none;
+    margin: 0 10px;
+    font-weight: bold;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+
+
